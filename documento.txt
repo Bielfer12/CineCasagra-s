@@ -1,0 +1,8 @@
+     Categoria     |              Função               |    Cor Visual    | Hexadecimal
+-------------------|-----------------------------------|------------------|------------
+     Primária      |   Fundo principal (Background)    | Preto Profundo   |  #0D0D0D
+   Secundária      | Destaques, Botões e Links         | Roxo Vibrante    |  #7B2CBF
+    Terciária      | Cards, Header e Sidebar           | Roxo Escuro      |  #1A1A2E
+   Quaternária     | Detalhes, Hovers e Bordas         | Lilás Neon       |  #C77DFF
+       Texto       | Leitura principal                 | Branco Suave     |  #E0E0E0
+---------------------------------------------------------------------------------------
