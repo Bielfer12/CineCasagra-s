@@ -1,37 +1,99 @@
 :root{
-
     --first-deep-black: #0D0D0D;
     --second-vibrant-purple: #7B2CBF;
     --third-dark-purple: #1A1A2E;
     --fourth-neon-lilac: #C77DFF;
     --text-soft-white: #E0E0E0;
+    --lines-in-gray: #B3ADAD;
+    --gradiant-in-purple: linear-gradient(194deg,rgba(126, 63, 251, 1) 0%, rgba(219, 70, 252, 1) 98%);
 }
 
 body {
-    background-color: gray;
+    background-color: var(--first-deep-black);
     margin: 0;
 }
+
+/* CABEÇALHO COMPLETO */
 
 .cabecalho{
     display: flex;
     align-items: center;
-    gap: 625px;
+    justify-content: space-between;
     height: auto;
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    border-bottom: solid 1px var(--second-vibrant-purple);
 }
 
-.home{
+.home h1{
+    padding-left: 30px;
+    margin:  10px 0 10px 0;
+    color: var(--fourth-neon-lilac);
+}
 
+.pesquisar{
+    display: flex;
+}
+
+
+.pesquisar input{
+    border-radius: 3px;
+    height: 25px;
+    border: 0;
+    margin: 0 10px 0 0;
+    width: 300px;
 }
 
 .pesquisar button{
-    border-radius: 10px;
-    height: 50px;
-    width: 50px;
+    height: 28px;
+    width: 30px;
+    padding: 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.pesquisar:hover{
+    filter: brightness(1.5);
+}
+
+.pesquisar img{
+    height: 20px;
+    width: 20px;
+    padding: 2px 0 0 0;
 }
 
 .entrar{
-
+    padding-right: 40px;
 }
+
+#btn-entrar{
+    height: 35px;
+    width: 100px;
+    background: var(--gradiant-in-purple);
+    color: var(--text-soft-white);
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#btn-cadastrar{
+    height: 35px;
+    width: 100px;
+    background: var(--text-soft-white);
+    color: var(--text-soft-white);
+    border-radius: 3px;
+    color: var(--first-deep-black);
+    border: 0;
+    cursor: pointer;
+}
+
+#btn-entrar:hover, #btn-cadastrar:hover {
+   filter: brightness(1.2)
+}
+
+/* CORPO DO SITE */
+
+
