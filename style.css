@@ -57,7 +57,7 @@ body {
 }
 
 .pesquisar:hover{
-    filter: brightness(1.5);
+    filter: brightness(1.05);
 }
 
 .pesquisar img{
@@ -118,24 +118,55 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.start img {
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+#banner-start {
     margin: 20px 10px 20px 10px;
     border-radius: 20px;
-    border: 2px solid var(--second-vibrant-purple);
     height: 500px;
-    width: 1000px;
+    width: 1200px;
     cursor: pointer;
 }
 
-.start img:hover {
-    filter: brightness(1.5);
+.infos img{
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+.infos button {
+    position: absolute;
+    top: 63%;
+    left: 12.5%;
+    height: 45px;
+    width: 200px;
+    background: var(--gradiant-in-purple);
+    color: var(--text-soft-white);
+    border-radius: 3px;
     border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.banner:hover {
+    filter: brightness(1.05);
+}
+
+#banner-start:hover {
+    border: 2px solid var(--second-vibrant-purple);
 }
 
 .your-history{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    position: relative;
+    overflow: hidden;
 }
 
 .your-history h2 {
@@ -146,26 +177,48 @@ body {
 }
 
 .movies-list{
+    padding: 20px;
+} 
+
+.movie-card {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    gap: 15px;
 }
 
-.movies-list img{
-    margin: 0 0 0 10px;
-    height: 200px;
-    width: 400px;
-    border: 2px solid var(--second-vibrant-purple);
+#poster{
     border-radius: 20px;
     cursor: pointer;
+    object-fit: cover; 
 }
 
-.movies-list img:hover {
-    filter: brightness(1.5);
-    border: 0; 
-}
-
-#cont01 {
+.cont-01 {
     margin-left: 30px;
+}
+
+#play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    opacity: 0; 
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.movie-card:hover #poster {
+    filter: brightness(0.6); /* Escurece a imagem para o play brilhar */
+    border: 2px solid var(--second-vibrant-purple);
+}
+
+.movie-card:hover #play {
+    opacity: 1; /* O play aparece apenas no card que recebeu o mouse */
+    transform: translate(-50%, -50%) scale(1.1); /* Dá um leve zoom */
 }
 
 .recomendations {
@@ -200,7 +253,7 @@ body {
 }
 
 .list-rec img:hover {
-    filter: brightness(1.5);
+    filter: brightness(1.05);
     border: 0;
 }
 
@@ -236,7 +289,7 @@ body {
 }
 
 .top-movies img:hover {
-    filter: brightness(1.5);
+    filter: brightness(1.05);
     border: 0;
 }
 
